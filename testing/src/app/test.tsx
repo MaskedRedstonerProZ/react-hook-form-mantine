@@ -20,7 +20,7 @@ import {
   Switch,
   Textarea,
   TextInput,
-} from "@masked-test/react-hook-form-mantine";
+} from "@maskedredstonerproz/react-hook-form-mantine";
 import { Button, Group, Paper, Container, Stack, MantineProvider } from "@mantine/core";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";

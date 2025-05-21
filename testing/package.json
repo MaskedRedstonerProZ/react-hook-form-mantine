@@ -14,7 +14,7 @@
     "@mantine/core": "8.0.1",
     "@mantine/dates": "8.0.1",
     "@mantine/hooks": "8.0.1",
-    "@masked-test/react-hook-form-mantine": "^3.1.2",
+    "@maskedredstonerproz/react-hook-form-mantine": "3.1.2",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "dayjs": "1.11.13",

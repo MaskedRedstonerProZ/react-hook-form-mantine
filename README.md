@@ -15,7 +15,7 @@ npm install react-hook-form-mantine react-hook-form @mantine/core @mantine/dates
 
 ## Usage/Examples
 
-Check [example usage](/example/src/App.tsx)
+Check [example usage](/testing/src/app/test.tsx)
 
 ## License
 

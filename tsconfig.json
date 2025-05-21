@@ -17,6 +17,6 @@
     "jsxFactory": "",
     "jsxFragmentFactory": ""
   },
-  "include": ["src"],
+  "include": ["src", "src/.FileInput"],
   "exclude": ["src/**/*.spec.tsx", "src/setupTests.tsx", "dist", "example"]
 }

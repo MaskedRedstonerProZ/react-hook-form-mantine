@@ -1,5 +1,4 @@
 // eslint-disable-next-line
-import React from "react";
 import { addons, types } from "@storybook/addons";
 import { AddonPanel } from "@storybook/components";
 import { ADDON_ID, PANEL_ID } from "./constants";

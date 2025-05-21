@@ -5,6 +5,7 @@ import {
 } from "react-hook-form";
 import {
   Select as $Select,
+  ComboboxItem,
   type SelectProps as $SelectProps,
 } from "@mantine/core";
 
@@ -36,7 +37,7 @@ export function Select<T extends FieldValues>({
       value={value}
       onChange={(e) => {
         fieldOnChange(e);
-        onChange?.(e);
+        onChange?.(e, { label: e, value: e } as ComboboxItem);
       }}
       error={fieldState.error?.message}
       {...field}

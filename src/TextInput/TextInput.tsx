@@ -17,6 +17,7 @@ export function TextInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: TextInputProps<T>) {
@@ -33,6 +34,7 @@ export function TextInput<T extends FieldValues>({
 
   return (
     <$TextInput
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

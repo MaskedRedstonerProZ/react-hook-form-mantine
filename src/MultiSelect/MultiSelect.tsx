@@ -17,6 +17,7 @@ export function MultiSelect<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: MultiSelectProps<T>) {
@@ -33,6 +34,7 @@ export function MultiSelect<T extends FieldValues>({
 
   return (
     <$MultiSelect
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

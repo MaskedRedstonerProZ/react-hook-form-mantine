@@ -11,7 +11,7 @@ import {
 
 export type DatePickerInputProps<T extends FieldValues> =
   UseControllerProps<T> &
-    Omit<$DatePickerInputProps<DatePickerType>, "value" | "defaultValue">;
+  Omit<$DatePickerInputProps<DatePickerType>, "value" | "defaultValue">;
 
 export function DatePickerInput<T extends FieldValues>({
   name,
@@ -19,6 +19,7 @@ export function DatePickerInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: DatePickerInputProps<T>) {
@@ -35,6 +36,7 @@ export function DatePickerInput<T extends FieldValues>({
 
   return (
     <$DatePickerInput
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

@@ -14,6 +14,7 @@ export function Input<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   ...props
 }: InputProps<T>) {
   const {
@@ -29,6 +30,7 @@ export function Input<T extends FieldValues>({
 
   return (
     <$Input
+      classNames={classNames}
       value={value}
       error={fieldState.error?.message}
       {...field}

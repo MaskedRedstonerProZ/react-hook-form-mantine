@@ -15,6 +15,7 @@ export function Radio<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: RadioProps<T>) {
@@ -30,6 +31,7 @@ export function Radio<T extends FieldValues>({
 
   return (
     <$Radio
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

@@ -17,6 +17,7 @@ export function PinInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: PinInputProps<T>) {
@@ -33,6 +34,7 @@ export function PinInput<T extends FieldValues>({
 
   return (
     <$PinInput
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

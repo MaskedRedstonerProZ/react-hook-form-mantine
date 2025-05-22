@@ -17,6 +17,7 @@ export function Textarea<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: TextareaProps<T>) {
@@ -33,6 +34,7 @@ export function Textarea<T extends FieldValues>({
 
   return (
     <$Textarea
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

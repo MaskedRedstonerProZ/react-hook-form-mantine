@@ -17,6 +17,7 @@ export function Autocomplete<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: AutocompleteProps<T>) {
@@ -33,6 +34,7 @@ export function Autocomplete<T extends FieldValues>({
 
   return (
     <$Autocomplete
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

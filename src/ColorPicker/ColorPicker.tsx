@@ -17,6 +17,7 @@ export function ColorPicker<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: ColorPickerProps<T>) {
@@ -32,6 +33,7 @@ export function ColorPicker<T extends FieldValues>({
 
   return (
     <$ColorPicker
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

@@ -17,6 +17,7 @@ export function JsonInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: JsonInputProps<T>) {
@@ -33,6 +34,7 @@ export function JsonInput<T extends FieldValues>({
 
   return (
     <$JsonInput
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

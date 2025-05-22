@@ -17,6 +17,7 @@ export function NumberInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: NumberInputProps<T>) {
@@ -33,6 +34,7 @@ export function NumberInput<T extends FieldValues>({
 
   return (
     <$NumberInput
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

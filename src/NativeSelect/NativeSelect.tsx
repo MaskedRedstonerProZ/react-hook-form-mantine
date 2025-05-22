@@ -17,6 +17,7 @@ export function NativeSelect<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: NativeSelectProps<T>) {
@@ -33,6 +34,7 @@ export function NativeSelect<T extends FieldValues>({
 
   return (
     <$NativeSelect
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

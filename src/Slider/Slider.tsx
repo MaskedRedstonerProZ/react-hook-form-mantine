@@ -17,6 +17,7 @@ export function Slider<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: SliderProps<T>) {
@@ -32,6 +33,7 @@ export function Slider<T extends FieldValues>({
 
   return (
     <$Slider
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

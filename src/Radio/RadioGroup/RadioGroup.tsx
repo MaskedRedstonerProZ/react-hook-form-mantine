@@ -17,6 +17,7 @@ export function RadioGroup<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: RadioGroupProps<T>) {
@@ -33,6 +34,7 @@ export function RadioGroup<T extends FieldValues>({
 
   return (
     <$RadioGroup
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

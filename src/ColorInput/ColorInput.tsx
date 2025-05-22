@@ -17,6 +17,7 @@ export function ColorInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: ColorInputProps<T>) {
@@ -33,6 +34,7 @@ export function ColorInput<T extends FieldValues>({
 
   return (
     <$ColorInput
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

@@ -17,6 +17,7 @@ export const CheckboxGroup = <T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: CheckboxGroupProps<T>) => {
@@ -33,6 +34,7 @@ export const CheckboxGroup = <T extends FieldValues>({
 
   return (
     <$CheckboxGroup
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

@@ -15,6 +15,7 @@ export const Chip = <T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: ChipProps<T>) => {
@@ -30,6 +31,7 @@ export const Chip = <T extends FieldValues>({
 
   return (
     <$Chip
+      classNames={classNames}
       value={value}
       checked={value}
       onChange={(e) => {

@@ -17,6 +17,7 @@ export function DateInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: DateInputProps<T>) {
@@ -33,6 +34,7 @@ export function DateInput<T extends FieldValues>({
 
   return (
     <$DateInput
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

@@ -17,6 +17,7 @@ export function DateTimePicker<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: DateTimePickerProps<T>) {
@@ -33,6 +34,7 @@ export function DateTimePicker<T extends FieldValues>({
 
   return (
     <$DateTimePicker
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {

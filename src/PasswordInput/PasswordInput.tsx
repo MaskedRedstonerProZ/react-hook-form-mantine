@@ -17,6 +17,7 @@ export function PasswordInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: PasswordInputProps<T>) {
@@ -33,6 +34,7 @@ export function PasswordInput<T extends FieldValues>({
 
   return (
     <$PasswordInput
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

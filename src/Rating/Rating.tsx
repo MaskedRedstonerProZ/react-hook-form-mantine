@@ -17,6 +17,7 @@ export function Rating<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: RatingProps<T>) {
@@ -32,6 +33,7 @@ export function Rating<T extends FieldValues>({
 
   return (
     <$Rating
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

@@ -10,7 +10,7 @@ import {
 
 export type SegmentedControlProps<T extends FieldValues> =
   UseControllerProps<T> &
-    Omit<$SegmentedControlProps, "values" | "defaultValues">;
+  Omit<$SegmentedControlProps, "values" | "defaultValues">;
 
 export function SegmentedControl<T extends FieldValues>({
   name,
@@ -18,6 +18,7 @@ export function SegmentedControl<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: SegmentedControlProps<T>) {
@@ -33,6 +34,7 @@ export function SegmentedControl<T extends FieldValues>({
 
   return (
     <$SegmentedControl
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

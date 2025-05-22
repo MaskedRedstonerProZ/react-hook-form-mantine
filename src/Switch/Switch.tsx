@@ -18,6 +18,7 @@ export function Switch<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: SwitchProps<T>) {
@@ -34,6 +35,7 @@ export function Switch<T extends FieldValues>({
 
   return (
     <$Switch
+      classNames={classNames}
       value={value}
       checked={value}
       onChange={(e) => {

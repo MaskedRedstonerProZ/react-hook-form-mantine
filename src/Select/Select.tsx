@@ -18,6 +18,7 @@ export function Select<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: SelectProps<T>) {
@@ -34,6 +35,7 @@ export function Select<T extends FieldValues>({
 
   return (
     <$Select
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

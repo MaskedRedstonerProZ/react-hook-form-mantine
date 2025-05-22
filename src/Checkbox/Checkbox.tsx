@@ -18,6 +18,7 @@ export const Checkbox = <T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: CheckboxProps<T>) => {
@@ -34,6 +35,7 @@ export const Checkbox = <T extends FieldValues>({
 
   return (
     <$Checkbox
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       checked={value}

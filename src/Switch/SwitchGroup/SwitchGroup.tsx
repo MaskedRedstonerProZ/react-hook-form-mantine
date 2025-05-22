@@ -17,6 +17,7 @@ export function SwitchGroup<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: SwitchGroupProps<T>) {
@@ -33,6 +34,7 @@ export function SwitchGroup<T extends FieldValues>({
 
   return (
     <$SwitchGroup
+      classNames={classNames}
       value={value}
       onChange={(e) => {
         fieldOnChange(e);

@@ -17,6 +17,7 @@ export function TimeInput<T extends FieldValues>({
   defaultValue,
   rules,
   shouldUnregister,
+  classNames,
   onChange,
   ...props
 }: TimeInputProps<T>) {
@@ -33,6 +34,7 @@ export function TimeInput<T extends FieldValues>({
 
   return (
     <$TimeInput
+      classNames={classNames}
       error={fieldState.error?.message}
       value={value}
       onChange={(e) => {
